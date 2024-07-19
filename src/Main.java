@@ -47,6 +47,19 @@ import java.util.stream.Stream;
 
 
 
+
+                List<Integer> num  = Arrays.asList(1, 8, 7, 6, 3,4);
+
+                int res = num.stream()
+                        .filter(n -> n%2 == 0 )
+                        .map(n ->n*2 )
+                        .reduce(0,(c,e)->c+e);
+                System.out.println(res);
+
+
+
+
+
                 //data.forEach(System.out::println);
 
 
